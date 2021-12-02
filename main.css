@@ -1,0 +1,222 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+div, p, input, button, form, span, a, ul, li, {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 1.4em;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.header {
+	background: rgba(122,202,249,1);
+	background: -moz-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(122,202,249,1)), color-stop(100%, rgba(56,145,218,1)));
+	background: -webkit-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+	background: -o-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+	background: -ms-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+	background: linear-gradient(to right, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acaf9', endColorstr='#3891da', GradientType=1 );
+	padding-top: 62px;
+	padding-bottom: 80px;
+	color: #fff;
+	/*transition: all 0.5s ease;*/
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offer {
+	width: 550px;
+}
+
+.title {
+	font-size: 37px;
+}
+
+.title span {
+	font-size: 50px;
+}
+
+.intro {
+	padding-top: 20px;
+	margin-bottom: 27px;
+	width: 370px;
+}
+
+.btn {
+	font-weight: 900;
+	font-family: 'Ubuntu', sans-serif;
+	background: #ffd429;
+	color: #2e2a1b;
+	display: block;
+	width: 210px;
+	padding: 14px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #dfb611;
+
+}
+
+.present {
+	padding-top: 70px;
+	padding-bottom: 65px;
+	text-align: center;
+}
+
+.dreams {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dream {
+	width: 289px;
+	background: url('img/icon.png') no-repeat top;
+	padding-top: 80px;
+	margin-top: 50px;
+}
+
+.dream-title {
+	font-size: 18px;
+}
+
+.dream-text {
+	line-height: 1.4em;
+	margin: 9px;
+}
+
+.dream-travel {
+	
+	background: url('img/icon2.png') no-repeat top;
+}
+
+.dream-create {
+	background: url('img/icon3.png') no-repeat top;
+}
+
+.mail {
+	background: #ecf3f8;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.section-title {
+	font-size: 30px;
+	padding-bottom: 20px;
+
+}
+
+.input {
+	margin: 0 auto 15px;
+	display: block;
+	width: 270px;
+	height: 30px;
+}
+
+.placeholder {
+	padding: 40px;
+}
+
+.btn-form {
+	margin: 0 auto;
+	border: 0;
+	display: inline;
+	width: 277px;
+	height: 41px;
+	padding: 0;
+}
+
+.container-two  {
+	text-align: center;
+}
+
+.footer {
+	background: #164d7a;
+	color: #ffffff;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	text-align: center;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px*/
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/*768px - 992px*/
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: 100%;
+	}
+	.travel {
+		display: block;
+    	margin: auto;
+	}
+}
+
+/*576px - 768px*/
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+}
+
+/* 0 - 576px*/
+@media screen and (max-width: 567px) {
+	.header {
+		background: rgba(122,202,249,1);
+		background: -moz-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(122,202,249,1)), color-stop(100%, rgba(56,145,218,1)));
+		background: -webkit-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+		background: -o-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+		background: -ms-linear-gradient(left, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+		background: linear-gradient(to right, rgba(122,202,249,1) 0%, rgba(56,145,218,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acaf9', endColorstr='#3891da', GradientType=1 );
+		width: 576px;
+	}
+	.mail {
+		background: #ecf3f8;
+		width: 576px;
+	}
+	.footer {
+		background: #164d7a;
+		width: 576px;
+	}
+}
